@@ -1,64 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-    crossorigin="anonymous"/>
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./style.css" />
 
     <title>German Holidays</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div id="header" data-hover="Deutsche Feiertage">
+      <h1><span>German Holidays</span></h1>
+    </div>
 
-  <div id="header" data-hover="Deutsche Feiertage!"> 
-  <h1><span>German Holidays!</span></h1>
-  </div>
-  
-  <table class="table">
-    <thead>
-      <tr>
-        <th id="january">January</th>
-        <th>February</th>
-        <th>March</th>
-        <th>April</th>
-        <th>May</th>
-        <th>June</th>
-        <th>July</th>
-        <th>August</th>
-        <th>September</th>
-        <th>October</th>
-        <th>November</th>
-        <th>December</th>
-      </tr>
-    </thead>
-    <tbody id="holidayNames">
-    </tbody>
+    <div class="imageContainer">
+      <div class="images" id="imageOne">
+        <img
+          src="./Assets/colognenewyearssilvesterGettyImages-1088903992ChanachaiPanichpattanakij-5fa1387f5819414487be6b6a25a2b0d9.jpeg"
+          alt="germany-image-1"
+          width="400px"
+          height="200px"
+        />
+      </div>
+      <div class="images" id="imageTwo">
+        <img
+          src="./Assets/Oktoberfest_-_Featured_moyqeo.jpeg"
+          alt="germany-image-2"
+          width="375px"
+          height="200px"
+        />
+      </div>
+      <div class="images" id="imageThree">
+        <img
+          src="./Assets/Germany_Festival_1024x1024.jpeg"
+          alt="germany-image-3"
+          width="375px"
+          height="200px"
+        />
+      </div>
+    </div>
 
-  </table>
-
-  <!-- <table>
-    <tr>
-      <th id="january">January</th>
-        <th>February</th>
-        <th>March</th>
-        <th>April</th>
-        <th>May</th>
-        <th>June</th>
-        <th>July</th>
-        <th>August</th>
-        <th>September</th>
-        <th>October</th>
-        <th>November</th>
-        <th>December</th>
-    </tr>
-  </table> -->
-
+    <div
+      id="carouselExampleControls"
+      class="carousel carousel-dark slide"
+      data-bs-interval="false"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h3>January Holidays</h3>
+          <table id="january">
+            <tr>
+              <th>Holiday Name</th>
+              <th>Date</th>
+              <th>Type of Holiday</th>
+              <th>Description</th>
+            </tr>
+          </table>
+        </div>
+        <div class="carousel-item">
+          <h3>February Holidays</h3>
+          <table id="february">
+            <tr>
+              <th>Holiday Name</th>
+              <th>Date</th>
+              <th>Type of Holiday</th>
+              <th>Description</th>
+            </tr>
+          </table>
+        </div>
+        <div class="carousel-item">
+          <h3>March Holidays</h3>
+          <table id="march">
+            <tr>
+              <th>Holiday Name</th>
+              <th>Date</th>
+              <th>Type of Holiday</th>
+              <th>Description</th>
+            </tr>
+          </table>
+        </div>
+        <div class="carousel-item">
+          <h3>April Holidays</h3>
+          <table id="april">
+            <th>Holiday Name</th>
+            <th>Date</th>
+            <th>Type of Holiday</th>
+            <th>Description</th>
+          </table>
+        </div>
+        <div class="carousel-item">
+          <h3>May Holidays</h3>
+          <table id="may">
+            <th>Holiday Name</th>
+            <th>Date</th>
+            <th>Type of Holiday</th>
+            <th>Description</th>
+          </table>
+        </div>
+        <div class="carousel-item">
+          <h3>June Holidays</h3>
+          <table id="june">
+            <th>Holiday Name</th>
+            <th>Date</th>
+            <th>Type of Holiday</th>
+            <th>Description</th>
+          </table>
+        </div>
+        <div class="carousel-item">
+          <h3>July Holidays</h3>
+          <table id="july">
+            <th>Holiday Name</th>
+            <th>Date</th>
+            <th>Type of Holiday</th>
+            <th>Description</th>
+          </table>
+        </div>
+        <div class="carousel-item">
+          <h3>August Holidays</h3>
+          <table id="august">
+            <th>Holiday Name</th>
+            <th>Date</th>
+            <th>Type of Holiday</th>
+            <th>Description</th>
+          </table>
+        </div>
+        <div class="carousel-item">
+          <h3>September Holidays</h3>
+          <table id="september">
+            <th>Holiday Name</th>
+            <th>Date</th>
+            <th>Type of Holiday</th>
+            <th>Description</th>
+          </table>
+        </div>
+        <div class="carousel-item">
+          <h3>October Holidays</h3>
+          <table id="october">
+            <th>Holiday Name</th>
+            <th>Date</th>
+            <th>Type of Holiday</th>
+            <th>Description</th>
+          </table>
+        </div>
+        <div class="carousel-item">
+          <h3>November Holidays</h3>
+          <table id="november">
+            <th>Holiday Name</th>
+            <th>Date</th>
+            <th>Type of Holiday</th>
+            <th>Description</th>
+          </table>
+        </div>
+        <div class="carousel-item">
+          <h3>December Holidays</h3>
+          <table id="december">
+            <th>Holiday Name</th>
+            <th>Date</th>
+            <th>Type of Holiday</th>
+            <th>Description</th>
+          </table>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -66,6 +194,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="./script.js"></script>
-    
-</body>
+  </body>
 </html>

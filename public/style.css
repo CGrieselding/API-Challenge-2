@@ -1,17 +1,38 @@
 body {
-    margin: 3px;
+    margin: 1px;
+}
+
+@font-face {
+    font-family: 'German Font';
+    src: url(./Assets/AboveDemoRegular-lJMd.ttf);
+}
+
+@font-face {
+    font-family: 'Table Header Font';
+    src: url(./Assets/PrimetimeRegular-vOL9.ttf);
 }
 
 h1 {
-    font-size: 60px;
-    font-weight: 700; 
+    font-size: 66px;
+    font-weight: 700;
+    font-family: 'German Font'; 
 }
 
 #header {
+    background-image: url(./Assets/images.jpeg);
+    background-repeat: repeat;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
-    color:red;
-    padding: 35px;
+    color: #fdc503;
+    text-shadow: 5px 5px black;
+    font-family: 'German Font';
+    padding-top: 30px;
+    border: 1px solid black;
+    border-radius: 200px;
+    margin-bottom: 40px;
+    margin-top: 6px;
 }
 
 #header:hover span {
@@ -19,8 +40,81 @@ h1 {
 }
 
 #header:hover:before {
+    display: flex;
+    justify-content: center;
     content: attr(data-hover);
-    font-size: 65px;
-    font-weight: 800;
+    font-family: 'German Font';
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    margin-bottom: 75px;
+  }
+
+.images {
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+  }
+
+#imageOne {
+      border: 7px solid black;
+  }
+
+#imageTwo {
+      border: 7px solid red;
+      margin-left: 10px;
+  }
+  
+#imageThree {
+      border: 7px solid #fdc503;
+      margin-left: 10px;
+  }
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    color: white;
+    width: 80px;
+    height: 80px;
+    outline: 3px black;
+}
+
+h3 {
     text-align: center;
+    font-family: 'German Font';
+    font-size: 40px;
+    color: red;
+    text-shadow: 2px 2px black;
+}
+
+table {
+    border: 1px solid black;
+    margin: 3px 170px 30px 170px;
+}
+
+th {
+    text-align: center;
+    font-family: 'Table Header Font';
+    font-size: 17px;
+    border: 1px solid black;
+    border-bottom: 3.5px solid black;
+    padding: 5px;
+    background-color: red;
+}
+
+td {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: #fdc503;
+}
+
+#april, #june {
+    margin: 30px 170px !important;
 }
